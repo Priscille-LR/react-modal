@@ -95,7 +95,8 @@ const Modal: React.FC<IModalProps> = ({
 }) => {
    const closeModal = () => setShowModal(false);
 
-   const keyPress = useCallback(
+   
+    const keyPress = useCallback(
       (e) => {
          if (e.key === 'Escape') {
             setShowModal(false);
@@ -108,7 +109,7 @@ const Modal: React.FC<IModalProps> = ({
       document.addEventListener('keydown', keyPress);
       return () => document.removeEventListener('keydown', keyPress);
    }, [keyPress]);
-
+   
    return (
       <div className="modal">
          <Background onClick={closeModal}>
