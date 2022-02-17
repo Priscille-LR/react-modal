@@ -4,8 +4,7 @@ import './modal.css';
 
 interface IModalProps {
    setShowModal: React.Dispatch<SetStateAction<boolean>>;
-   modalTitle: string;
-   modalMessage: string;
+   children: React.ReactNode;
    buttonContent: string;
 }
 
@@ -13,8 +12,7 @@ interface IModalProps {
 
 const Modal: React.FC<IModalProps> = ({
    setShowModal,
-   modalTitle,
-   modalMessage,
+   children,
    buttonContent,
 }) => {
    const closeModal = () => setShowModal(false);
@@ -25,8 +23,7 @@ const Modal: React.FC<IModalProps> = ({
             {/* <img src={logo} alt="" className="modal-img" /> */}
             <div className="modal-content">
                <GrClose onClick={closeModal} />
-               <h2>{modalTitle}</h2>
-               <p>{modalMessage}</p>
+               <div className="modal-text">{children}</div>
                <button onClick={closeModal}>{buttonContent}</button>
             </div>
          </div>

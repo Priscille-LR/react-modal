@@ -1,9 +1,6 @@
 {
-   "name": "@priscille-lr/react-modal",
-   "publishConfig": {
-      "registry": "https://www.npmjs.com/~priscille-lr"
-   },
-   "version": "1.0.33",
+   "name": "react-modal-plr",
+   "version": "1.0.40",
    "description": "react component library",
    "scripts": {
       "build": "rollup -c",
@@ -12,6 +9,7 @@
    },
    "author": "plr",
    "license": "ISC",
+   "private": false,
    "devDependencies": {
       "@babel/core": "^7.17.2",
       "@babel/preset-env": "^7.16.11",

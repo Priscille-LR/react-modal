@@ -9,8 +9,7 @@ describe('Modal', () => {
       render(
          <Modal
             setShowModal={setShowModal}
-            modalTitle={'Success !'}
-            modalMessage={'Employee has been created'}
+            children={<h2>Success !</h2>}
             buttonContent={'Close'}
          />
       );
