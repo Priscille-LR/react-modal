@@ -10,7 +10,7 @@ This package can be installed via [NPM](https://www.npmjs.com/) :
 Or [Yarn](https://yarnpkg.com/) :
 `yarn add react-modal-plr`
 
-You’ll need to install React and PropTypes separately since those dependencies aren’t included in the package.
+You’ll need to install React and eventually PropTypes (if you want to use this library in a JS project) separately since those dependencies aren’t included in the package.
 
 ## Usage
 

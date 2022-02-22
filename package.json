@@ -1,6 +1,6 @@
 {
    "name": "react-modal-plr",
-   "version": "1.0.40",
+   "version": "1.0.43",
    "description": "react component library",
    "scripts": {
       "build": "rollup -c",
@@ -45,6 +45,13 @@
       "react-icons": "^4.3.1",
       "styled-components": "^5.3.3"
    },
+   "keywords": [
+      "react",
+      "modal",
+      "typescript",
+      "react-component",
+      "reactts"
+   ],
    "repository": {
       "type": "git",
       "url": "git+https://github.com/Priscille-LR/react-modal.git"

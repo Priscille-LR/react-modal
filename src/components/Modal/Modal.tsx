@@ -8,8 +8,6 @@ interface IModalProps {
    buttonContent: string;
 }
 
-//const logo = require('../../assets/modal-logo.png');
-
 const Modal: React.FC<IModalProps> = ({
    setShowModal,
    children,
@@ -20,7 +18,6 @@ const Modal: React.FC<IModalProps> = ({
    return (
       <div className="modal-background" onClick={closeModal}>
          <div className="modal-wrapper">
-            {/* <img src={logo} alt="" className="modal-img" /> */}
             <div className="modal-content">
                <GrClose onClick={closeModal} />
                <div className="modal-text">{children}</div>
